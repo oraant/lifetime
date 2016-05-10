@@ -23,35 +23,37 @@
 </head>
 <body>
 
+    {{ content }}
+
     <div id="container" class="container-fluid">
 
         <div class="row">
             <div class="col-lg-12">
-            {% include "navigation.html" %}
+            {% include navigation.ext %}
             </div>
         </div>
 
         <div id="carousel_row" class="row">
             <div class="col-lg-12">
-            {% include "carousel.html" %}
+            {% include carousel.ext %}
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg-12">
-            {% include "tags.html" %}
+            {% include tags.ext %}
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg-12">
-            {% include "content.html" %}
+            {% include content.ext %}
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg-12">
-            {% include "footer.html" %}
+            {% include footer.ext %}
             </div>
         </div>
 

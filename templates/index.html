@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>以生为书</title>
+    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <style>
+        #nav{border-radius:0px;margin:0px}
+        #container{padding:0px}
+        #carousel_items .item {max-height:400px}
+        #carousel_indicator{max-height:400px}
+        #pagination{text-align:center;background-color:#222;}
+        #pagination ul{margin-top:5px;margin-bottom:0px;border-radius:0px}
+        #pagination a{margin:0px;border-radius:0px;background-color:#222;color:#9d9d9d;border:#444}
+        #pagination a:hover{margin:0px;border-radius:0px;background-color:#111;color:#9d9d9d;border:#444}
+        #content .person {margin-top:10px;border-left-style:solid;border-width:1px;border-color:#eee}
+        #content .person img{margin-top:10px;}
+    </style>
+
+</head>
+<body>
+
+    <div id="container" class="container-fluid">
+
+        <div class="row">
+            <div class="col-lg-12">
+            {% include "navigation.html" %}
+            </div>
+        </div>
+
+        <div id="carousel_row" class="row">
+            <div class="col-lg-12">
+            {% include "carousel.html" %}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+            {% include "tags.html" %}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+            {% include "content.html" %}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+            {% include "footer.html" %}
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+       $(function () { $("[data-toggle='tooltip']").tooltip(); });
+    </script>
+
+</body>
+</html>
